@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["/src/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@redux": ["./src/redux"],
+
+      "@dataProvider/*": ["./src/dataProvider/*"],
+      "@dataProvider": ["./src/dataProvider"],
+
+      "@common/*": ["./src/components/common/*"],
+      "@common": ["./src/components/common"],
+
+      "@features/*": ["./src/components/features/*"],
+      "@features": ["./src/components/features"],
+
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"],
+
+      "@constants/*": ["./src/constants/*"],
+      "@constants": ["./src/constants"],
+
+      "@hooks/*": ["./src/hooks/*"],
+      "@hooks": ["./src/hooks"],
+
+      "@i18n/*": ["./src/app/i18n/*"],
+      "@i18n": ["./src/app/i18n"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/layout.jsx",
+    "src/app/page.jsx",
+    "src/redux/slice/counterSlice.js",
+    "src/redux/services/userApi.js",
+    "src/redux/hooks.js",
+    "src/redux/provider.jsx",
+    "src/redux/store.js",
+    "src/dataProvider/axios/index.js"
+, "src/hooks/useThemeSelector.js"  ],
+  "exclude": ["node_modules"]
+}
