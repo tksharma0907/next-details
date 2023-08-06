@@ -1,7 +1,7 @@
 import React from "react";
 
 const CompanyInfo = () => {
-  return <div>CompanyInfo</div>;
+  return <div style={{height:"100vh"}}>CompanyInfo</div>;
 };
 
 export default CompanyInfo;
