@@ -7,10 +7,15 @@ import Image from "next/image";
 import styles from "./styles";
 
 const Header = () => {
-
   return (
     <Box sx={styles.wrapper}>
-      <Image src="/logo.png" alt="logo" height={40} width={40} />
+      <Image
+        style={{ marginLeft: "30px" }}
+        src="/logo.png"
+        alt="logo"
+        height={20}
+        width={20}
+      />
       <Box sx={styles.leftSection}>
         <SettingsOutlinedIcon sx={styles.icon} />
         <ClearOutlinedIcon sx={styles.icon} />

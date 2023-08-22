@@ -24,10 +24,6 @@ const PersonalDetails = () => {
 
   return (
     <>
-      <Box sx={{ position: "absolute", top: "16px", right: "80px" }}>
-        <ThemeToggle handleToggle={handleToggle} themeSetting={themeSetting} />
-      </Box>
-
       <Box
         sx={{
           ...styles.wrapper,

@@ -59,6 +59,6 @@
     "src/redux/provider.jsx",
     "src/redux/store.js",
     "src/dataProvider/axios/index.js"
-, "src/hooks/useThemeSelector.js"  ],
+, "src/hooks/useThemeSelector.js", "src/hooks/useWindowDimensions.js"  ],
   "exclude": ["node_modules"]
 }

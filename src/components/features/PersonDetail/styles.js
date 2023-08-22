@@ -1,6 +1,6 @@
 const styles = {
   wrapper: {
-    width: "100%",
+    padding: "0 30px",
   },
 
   tapWrapper: { borderBottom: 1, borderColor: "divider" },

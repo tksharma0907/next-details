@@ -1,9 +1,19 @@
 const styles = {
-  primaryWrapper: {
+  primaryWrapper: (width) => ({
     display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-  },
+    gap: "60px",
+    ...(width < 1208 && {
+      flexDirection: "column",
+      gap: "10px",
+    }),
+  }),
+
+  sectionWrapper: (width) => ({
+    width: "32%",
+    ...(width < 1208 && {
+      width: "100%",
+    }),
+  }),
 
   secondaryWrapper: {
     display: "flex",
@@ -14,6 +24,7 @@ const styles = {
     display: "flex",
     gap: "10px",
     marginTop: "18px",
+    marginBottom: "20px",
   },
 
   name: {
@@ -42,24 +53,54 @@ const styles = {
     marginTop: "20px",
   },
 
-  detailWrapper: {
-    width: "100%",
+  divider: {
+    marginTop: "20px",
+    marginBottom: "60px",
+  },
+
+  headerWrapper: {
+    fontSize: "14px",
     display: "flex",
-    alignItems: "start",
-    justifyContent: "space-between",
+    flexDirection: "column",
+    alignItems: "center",
   },
 
-  detailsLeftSection: { display: "flex", alignItems: "start", gap: "20px" },
-
-  iconStyles: {
-    color: "grey",
+  headerTypo: {
+    color: "#6C2BD9",
   },
 
-  detailInfo: {
-    color: "grey",
-    width: "236px",
-    wordBreak: "break-all",
-    textAlign: "end",
+  selectIconWrapper: {
+    display: "flex",
+    gap: "10px",
+    alignItems: "center",
+  },
+
+  popularitySelectStyles: {
+    "& .MuiInputBase-root": {
+      height: "34px",
+      width: "150px",
+      padding: "10px 0",
+      fontSize: "14px",
+      borderRadius: "8px",
+    },
+  },
+
+  actionSelectStyles: {
+    "& .MuiInputBase-root": {
+      height: "34px",
+      width: "120px",
+      padding: "10px 0",
+      fontSize: "14px",
+      borderRadius: "8px",
+    },
+  },
+
+  selectWrapper: {
+    position: "absolute",
+    top: "-8px",
+    right: "-50px",
+    display: "flex",
+    gap: "10px",
   },
 };
 

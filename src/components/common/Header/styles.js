@@ -8,6 +8,7 @@ const styles = {
   },
 
   leftSection: {
+    marginRight: "30px",
     display: "flex",
     gap: "15px",
   },
